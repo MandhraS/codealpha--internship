@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Short URL Not Found</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="panel">
+        <p class="eyebrow">404</p>
+        <h1>Short URL not found</h1>
+        <p class="subtitle">No saved URL exists for code "{{ short_code }}".</p>
+        <a class="home-link" href="{{ url_for('index') }}">Create a short URL</a>
+      </section>
+    </main>
+  </body>
+</html>
